@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./css/gallery.css">
+</head>
+<body>
+    <!-- <div id="background">
+        <h1>Images</h1>
+    </div> -->
+    
+    <!-- Navbar -->
+    <nav id="myNavbar" class="navbar">
+        <a href="home.html" class="navbar-brand"><span>W</span>eb<span>p</span>age</a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="navbar-toggler">
+            <span></span>
+        </button>
+    </nav>
+    <div class="title-text"><h2>Mardi Photos</h2></div>
+    
+<!-- Image gallery -->
+
+<div class="gallery-container">
+    <div class="gallery-image">
+        <img src="gallery/1.jpg" onclick="openModal();currentSlide(1)"class="image">
+    </div>
+    <div class="gallery-image">
+        <img src="gallery/2.jpg" onclick="openModal();currentSlide(2)" class="image">
+    </div>
+    <div class="gallery-image">
+        <img src="gallery/3.jpg" onclick="openModal();currentSlide(3)" class="image">
+    </div>
+    <div class="gallery-image">
+        <img src="gallery/4.jpg" onclick="openModal();currentSlide(4)" class="image">
+    </div>
+    <div class="gallery-image">
+        <img src="gallery/5.jpg" onclick="openModal();currentSlide(5)" class="image">
+    </div>
+    <div class="gallery-image">
+        <img src="gallery/6.jpg" onclick="openModal();currentSlide(6)" class="image">
+    </div>
+    <div class="gallery-image">
+        <img src="gallery/7.jpg" onclick="openModal();currentSlide(7)" class="image">
+    </div>
+    <div class="gallery-image">
+        <img src="gallery/8.jpg" onclick="openModal();currentSlide(8)" class="image">
+    </div>
+    <div class="gallery-image">
+        <img src="gallery/9.jpg" onclick="openModal();currentSlide(9)" class="image">
+    </div>
+</div>
+
+<!-- LightBox -->
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="number-text">1/9</div>
+            <img src="gallery/1.jpg" style="width: 100%; height: 100%;"> 
+        </div>
+        <div class="mySlides">
+            <div class="number-text">2/9</div>
+            <img src="gallery/2.jpg" style="width: 100%;"> 
+        </div>
+        <div class="mySlides">
+            <div class="number-text">3/9</div>
+            <img src="gallery/3.jpg" style="width: 100%;"> 
+        </div>
+        <div class="mySlides">
+            <div class="number-text">4/9</div>
+            <img src="gallery/4.jpg" style="width: 100%;"> 
+        </div>
+        <div class="mySlides">
+            <div class="number-text">5/9</div>
+            <img src="gallery/5.jpg" style="width: 100%;"> 
+        </div>
+        <div class="mySlides">
+            <div class="number-text">6/9</div>
+            <img src="gallery/6.jpg" style="width: 100%;"> 
+        </div>
+        <div class="mySlides">
+            <div class="number-text">7/9</div>
+            <img src="gallery/7.jpg" style="width: 100%;"> 
+        </div>
+        <div class="mySlides">
+            <div class="number-text">8/9</div>
+            <img src="gallery/8.jpg" style="width: 100%;"> 
+        </div>
+        <div class="mySlides">
+            <div class="number-text">9/9</div>
+            <img src="gallery/9.jpg" style="width: 100%;"> 
+        </div>
+        
+
+        <!-- Next/Previous Controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        
+    </div>
+</div>
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="column">
+                <img src="gallery/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="gallery/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="gallery/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <img src="gallery/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                <img src="gallery/5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="gallery/6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                <img src="gallery/7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                <img src="gallery/8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="gallery/9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                <img src="gallery/10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="gallery/11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+                <img src="gallery/12.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+                <img src="gallery/13.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+                <img src="gallery/14.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+                <img src="gallery/15.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+            </div>
+        </div>
+    </div> -->
+    <script src="gallery.js"></script>
+</body>
+</html>
